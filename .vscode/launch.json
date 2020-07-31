@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Platformer2D (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Platformer2D Win64 Debug Build",
+			"program": "F:\\Documents\\Unreal\\Platformer2D\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "F:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Platformer2D (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Platformer2D Win64 DebugGame Build",
+			"program": "F:\\Documents\\Unreal\\Platformer2D\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "F:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Platformer2D (Development)",
+			"request": "launch",
+			"preLaunchTask": "Platformer2D Win64 Development Build",
+			"program": "F:\\Documents\\Unreal\\Platformer2D\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "F:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Platformer2D (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "Platformer2D Win64 Shipping Build",
+			"program": "F:\\Documents\\Unreal\\Platformer2D\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "F:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Platformer2D (Test)",
+			"request": "launch",
+			"preLaunchTask": "Platformer2D Win64 Test Build",
+			"program": "F:\\Documents\\Unreal\\Platformer2D\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "F:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Platformer2DEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Platformer2DEditor Win64 Debug Build",
+			"program": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"F:\\Documents\\Unreal\\Platformer2D\\Platformer2D.uproject"
+			],
+			"cwd": "F:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Platformer2DEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Platformer2DEditor Win64 DebugGame Build",
+			"program": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"F:\\Documents\\Unreal\\Platformer2D\\Platformer2D.uproject"
+			],
+			"cwd": "F:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Platformer2DEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "Platformer2DEditor Win64 Development Build",
+			"program": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"F:\\Documents\\Unreal\\Platformer2D\\Platformer2D.uproject"
+			],
+			"cwd": "F:\\Program Files\\Epic Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "F:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"F:\\Documents\\Unreal\\Platformer2D\\Platformer2D.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "F:\\Program Files\\Epic Games\\UE_4.25"
+		}
+	]
+}

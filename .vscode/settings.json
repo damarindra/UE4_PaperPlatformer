@@ -1,0 +1,12 @@
+{
+	"files.exclude": {
+		"F:/Documents/Unreal/Platformer2D/.idea": true,
+		"F:/Documents/Unreal/Platformer2D/.vs": true,
+		"F:/Documents/Unreal/Platformer2D/.vscode": true,
+		"F:/Documents/Unreal/Platformer2D/Android_ETC2": true,
+		"F:/Documents/Unreal/Platformer2D/Content": true,
+		"F:/Documents/Unreal/Platformer2D/DerivedDataCache": true,
+		"F:/Documents/Unreal/Platformer2D/Intermediate": true,
+		"F:/Documents/Unreal/Platformer2D/Saved": true
+	}
+}
