@@ -4,6 +4,7 @@
     <e p="C:\Users\damar\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\damar\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\ReSharperHost\v202\SolutionCaches\_Platformer2D.-1197073993.00" t="ExcludeRecursive" />
     <e p="F:\Documents\Unreal\Platformer2D" t="IncludeFlat">
+      <e p=".gitignore" t="Include" />
       <e p="Config" t="Include">
         <e p="DefaultEditor.ini" t="Include" />
         <e p="DefaultEditorPerProjectUserSettings.ini" t="Include" />
@@ -22,8 +23,37 @@
       <e p="Platformer2D.code-workspace" t="Include" />
       <e p="Platformer2D.sln" t="IncludeFlat" />
       <e p="Platformer2D.uproject" t="Include" />
+      <e p="Plugins" t="Include">
+        <e p="DIMathTools" t="Include">
+          <e p="DIMathTools.uplugin" t="Include" />
+          <e p="Resources" t="Include">
+            <e p="Icon128.png" t="Include" />
+          </e>
+          <e p="Source" t="Include">
+            <e p="DIMathTools" t="Include">
+              <e p="Classes" t="Include">
+                <e p="MathHelper.h" t="Include" />
+              </e>
+              <e p="DIMathTools.Build.cs" t="Include" />
+              <e p="Private" t="Include">
+                <e p="DIMathTools.cpp" t="Include" />
+                <e p="DIMathToolsBPLibrary.cpp" t="Include" />
+                <e p="MathHelper.cpp" t="Include" />
+              </e>
+              <e p="Public" t="Include">
+                <e p="DIMathTools.h" t="Include" />
+                <e p="DIMathToolsBPLibrary.h" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="Source" t="Include">
         <e p="Platformer2D" t="Include">
+          <e p="GameFramework" t="Include">
+            <e p="Platformer2DMovement.cpp" t="Include" />
+            <e p="Platformer2DMovement.h" t="Include" />
+          </e>
           <e p="Pawn" t="Include">
             <e p="PlatformerPlayer.cpp" t="Include" />
             <e p="PlatformerPlayer.h" t="Include" />
@@ -35,6 +65,8 @@
           <e p="Platformer2DCharacter.h" t="Include" />
           <e p="Platformer2DGameMode.cpp" t="Include" />
           <e p="Platformer2DGameMode.h" t="Include" />
+          <e p="Platformer2DTypes.cpp" t="Include" />
+          <e p="Platformer2DTypes.h" t="Include" />
         </e>
         <e p="Platformer2D.Target.cs" t="Include" />
         <e p="Platformer2DEditor.Target.cs" t="Include" />
