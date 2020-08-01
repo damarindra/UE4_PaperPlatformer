@@ -33,6 +33,7 @@ class PLATFORMER2D_API UPlatformer2DMovement : public UCharacterMovementComponen
 	UFUNCTION(CallInEditor, Category="Character Movement: Jumping / Falling")
 	void CalculateAndPrintLogJumpingValue();
 
+
 	UPROPERTY()
 	APlatformerPlayer* PlayerOwner;
 
@@ -41,12 +42,17 @@ class PLATFORMER2D_API UPlatformer2DMovement : public UCharacterMovementComponen
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Character Movement: Jumping / Falling", meta=(AllowPrivateAccess = "true"))
 	float CoyoteJumpTime = 0.05;
+
+	bool CanCoyoteJump() const;
 	
+	UFUNCTION(BlueprintCallable, Category="Pawn|Components|CharacterMovement")
+    void CalculateJumpVelocityClamp();
 
 public:
 	UPlatformer2DMovement();
 	
-	/* Use method Velocity Clamp when jumping. This really good when creating controlable jump. Don't forget to CalculateJumpingValue
+	/* Use method Velocity Clamp when jumping. This really good when creating controlable jump.
+	 Automatically set the JumpZVelocity and MaxJumpHoldTime at begin play. So setup this 2 variable at blueprint is useless if this enabled
 	 */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Character Movement: Jumping / Falling")
 	bool bJumpVelocityClamp = true;
@@ -59,6 +65,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category="Pawn|Components|CharacterMovement")
 	void FinishUpJumping();
 
+	virtual void BeginPlay() override;
 
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+
+	virtual void SetUpdatedComponent(USceneComponent* NewUpdatedComponent) override;
 };

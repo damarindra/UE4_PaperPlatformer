@@ -4,11 +4,13 @@
 #include "PlatformerPlayer.h"
 
 
-#include "../../../Plugins/DIMathTools/Source/DIMathTools/Classes/MathHelper.h"
+#include "MathHelper.h"
+#include "PaperFlipbookComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Engine/EngineTypes.h"
+#include "PhysicsEngine/PhysicsSettings.h"
 #include "Platformer2D/GameFramework/Platformer2DMovement.h"
 
 
@@ -35,6 +37,14 @@ void APlatformerPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 void APlatformerPlayer::MoveHorizontal(float AxisValue)
 {
 	AddMovementInput(WalkDirection, AxisValue);
+
+	FVector Scale = GetSprite()->GetRelativeScale3D();
+	FVector Loc = GetSprite()->GetRelativeLocation();
+	if(AxisValue < 0 && Scale.X > 0 || AxisValue > 0 && Scale.X < 0)
+	{
+		GetSprite()->SetRelativeScale3D(FVector(Scale.X * -1, Scale.Y, Scale.Z));
+		GetSprite()->SetRelativeLocation(FVector(Loc.X * -1, Loc.Y, Loc.Z));
+	}
 }
 
 void APlatformerPlayer::OnCapsuleHit(UPrimitiveComponent* HitComponent,
@@ -56,14 +66,13 @@ bool APlatformerPlayer::CanJumpInternal_Implementation() const
 
 	if (bCanJump)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("JumpCount %d, Movement Mode %d"), JumpCurrentCount, (uint8)Platformer2DMovement->MovementMode);
 		// Ensure JumpHoldTime and JumpCount are valid.
 		if (!bWasJumping || GetJumpMaxHoldTime() <= 0.0f)
 		{
 			
 			if (JumpCurrentCount == 0 && Platformer2DMovement->IsFalling())
 			{
-				// Unreal CheckJumpInput function increment JumpCurrentCount whenever character is falling. So, we need to check the JumpCurrentCount == 1 to make Coyote Jump
+				// Coyote Jump
 				if(GetVelocity().Z <= 0 &&
                     Platformer2DMovement->TimeSinceFall <= Platformer2DMovement->CoyoteJumpTime)
 				{
@@ -80,7 +89,6 @@ bool APlatformerPlayer::CanJumpInternal_Implementation() const
 		}
 		else
 		{
-			UE_LOG(LogTemp, Error, TEXT("Normal Jump"));
 			// Only consider JumpKeyHoldTime as long as:
 			// A) The jump limit hasn't been met OR
 			// B) The jump limit has been met AND we were already jumping
@@ -133,7 +141,6 @@ APlatformerPlayer::APlatformerPlayer(const FObjectInitializer& ObjectInitializer
 	JumpMaxHoldTime = 0.180702;
 
 	Platformer2DMovement = Cast<UPlatformer2DMovement>(GetCharacterMovement());
-	Platformer2DMovement->PlayerOwner = this;
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
@@ -149,7 +156,6 @@ UPaperFlipbook* APlatformerPlayer::GetAnimationFlipbook(const FName Key) const
 
 void APlatformerPlayer::Jump()
 {
-	
 	Super::Jump();
 }
 

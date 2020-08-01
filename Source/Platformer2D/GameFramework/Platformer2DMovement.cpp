@@ -6,7 +6,7 @@
 
 
 #include "PhysicsEngine/PhysicsSettings.h"
-// #include "Platformer2D/Pawn/PlatformerPlayer.h"
+#include "Platformer2D/Pawn/PlatformerPlayer.h"
 
 void UPlatformer2DMovement::CalculateAndPrintLogJumpingValue()
 {
@@ -20,16 +20,27 @@ void UPlatformer2DMovement::CalculateAndPrintLogJumpingValue()
 	UE_LOG(LogTemp, Warning, TEXT("JumpZVelocity = %f"), JumpZ);
 	UE_LOG(LogTemp, Warning, TEXT("JumpMaxHoldTime = %f"), FMath::Abs(JumpZ / Gravity));
 
-	// This calculation is alright.
-	// if(PlayerOwner && PlayerOwner->GetClass()->ClassGeneratedBy)
-	// {
-	// 	PlayerOwner->GetClass()->ClassGeneratedBy->Modify();
-	// 	// const float Gravity = (2 * MaxJumpHeight / (CharacterOwner->JumpMaxHoldTime * CharacterOwner->JumpMaxHoldTime));
-	// 	JumpZVelocity = FMath::Sqrt(FMath::Abs(2 * Gravity * MaxJumpHeight));
-	// 	PlayerOwner->JumpMaxHoldTime = FMath::Abs(JumpZVelocity / Gravity);
-	// }
 }
 
+
+bool UPlatformer2DMovement::CanCoyoteJump() const
+{
+	return PlayerOwner->JumpCurrentCount == 0 && IsFalling() && PlayerOwner->GetVelocity().Z <= 0 &&
+                    TimeSinceFall <= CoyoteJumpTime;
+}
+
+void UPlatformer2DMovement::CalculateJumpVelocityClamp()
+{
+	// This calculation is alright.
+	if(PlayerOwner)
+	{
+		const float Gravity = GetGravityZ();
+		const float JumpZ = FMath::Sqrt(FMath::Abs(2 * Gravity * MaxJumpHeight));
+		// const float Gravity = (2 * MaxJumpHeight / (CharacterOwner->JumpMaxHoldTime * CharacterOwner->JumpMaxHoldTime));
+		JumpZVelocity = JumpZ;
+		PlayerOwner->JumpMaxHoldTime = FMath::Abs(JumpZ / Gravity);
+	}
+}
 
 UPlatformer2DMovement::UPlatformer2DMovement()
 {
@@ -60,8 +71,18 @@ void UPlatformer2DMovement::FinishUpJumping()
 	}
 }
 
+void UPlatformer2DMovement::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if(bJumpVelocityClamp)
+	{
+		CalculateJumpVelocityClamp();
+	}
+}
+
 void UPlatformer2DMovement::TickComponent(float DeltaTime, ELevelTick TickType,
-	FActorComponentTickFunction* ThisTickFunction)
+                                          FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
@@ -69,4 +90,11 @@ void UPlatformer2DMovement::TickComponent(float DeltaTime, ELevelTick TickType,
 	{
 		TimeSinceFall += DeltaTime;
 	}
+}
+
+void UPlatformer2DMovement::SetUpdatedComponent(USceneComponent* NewUpdatedComponent)
+{
+	Super::SetUpdatedComponent(NewUpdatedComponent);
+
+	PlayerOwner = Cast<APlatformerPlayer>(PawnOwner);
 }
