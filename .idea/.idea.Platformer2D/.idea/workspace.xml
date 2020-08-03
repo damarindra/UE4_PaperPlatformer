@@ -22,13 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf389dec-dd1d-4f1d-b83c-249cd2e4aabd" name="Default Changelist" comment="Add Jump Coyote&#10;Add Movement&#10;Update gitignore">
+    <list default="true" id="bf389dec-dd1d-4f1d-b83c-249cd2e4aabd" name="Default Changelist" comment="set auto set jump velocity value when Begin Play">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Platformer2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Platformer2D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Platformer2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Platformer2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Prototype.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Prototype.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Platformer2D/Pawn/PlatformerPlayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Platformer2D/Pawn/PlatformerPlayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Platformer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Platformer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Platformer2D/Platformer2D.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Platformer2D/Platformer2D.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,25 +44,14 @@
     <setting file="file://$PROJECT_DIR$/Platformer2D.uproject" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperCharacter.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperFlipbook.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Private/Components/MovementComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Private/GameFramework/SpringArmComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperFlipbookComponent.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Pawn/PlatformerPlayer.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Pawn/PlatformerPlayer.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Private/PaperPixelMovement.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Plugins/Experimental/ControlRig/Source/ControlRigDeveloper/Private/AnimGraphNode_ControlRig.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Private/Character.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Public/PaperPixelMovement.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperSprite.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Editor/Kismet/Private/BlueprintDetailsCustomization.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperTileMap.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Editor/Kismet/Private/BlueprintEditor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Plugins/2D/Paper2D/Source/Paper2DEditor/Private/TileMapEditing/TileMapEditor.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Platformer2DTypes.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/Platformer2D/PlatformerPlayer.gen.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/SpringArmComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/DIMathTools/Source/DIMathTools/Private/DIMathToolsBPLibrary.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Platformer2D.Build.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Platformer2DCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -70,14 +60,37 @@
     <setting file="file://$PROJECT_DIR$/Plugins/DIMathTools/Source/DIMathTools/Classes/MathHelper.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Platformer2DEditor.Target.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/DIMathTools/Source/DIMathTools/DIMathTools.Build.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Platformer2DTypes.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/Engine/EngineTypes.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Platformer2D.Target.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/Kismet/KismetMathLibrary.inl" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/PaperTileMap.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Private/Components/CharacterMovementComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Private/PaperPixelCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Public/PaperPixelCharacter.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Private/Components/MovementComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Pawn/PlatformerPlayer.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Pawn/PlatformerPlayer.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Private/Character.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Editor/Kismet/Private/BlueprintDetailsCustomization.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Editor/Kismet/Private/BlueprintEditor.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Platformer2DTypes.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/Platformer2D/PlatformerPlayer.gen.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Editor/DetailCustomizations/Private/BodyInstanceCustomization.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/SpringArmComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Public/PaperPixel.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Private/PaperPixel.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/PaperPixel/PaperPixel.uplugin" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/PaperPixel.Build.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Platformer2D/Platformer2DTypes.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/Engine/EngineTypes.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/PhysicsEngine/BodyInstance.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -86,11 +99,17 @@
         <option value="$PROJECT_DIR$/Source/Platformer2D/Platformer2DTypes.cpp" />
         <option value="$PROJECT_DIR$/Source/Platformer2D/Platformer2DTypes.h" />
         <option value="$PROJECT_DIR$/Plugins/DIMathTools/Source/DIMathTools/Private/DIMathToolsBPLibrary.cpp" />
-        <option value="$PROJECT_DIR$/Source/Platformer2D/Platformer2D.Build.cs" />
         <option value="$PROJECT_DIR$/Source/Platformer2D/Pawn/PlatformerPlayer.h" />
         <option value="$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.cpp" />
         <option value="$PROJECT_DIR$/Source/Platformer2D/GameFramework/Platformer2DMovement.h" />
         <option value="$PROJECT_DIR$/Source/Platformer2D/Pawn/PlatformerPlayer.cpp" />
+        <option value="$PROJECT_DIR$/Source/Platformer2D/Platformer2D.Build.cs" />
+        <option value="$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/PaperPixel.Build.cs" />
+        <option value="$PROJECT_DIR$/Plugins/PaperPixel/PaperPixel.uplugin" />
+        <option value="$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Public/PaperPixelMovement.h" />
+        <option value="$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Private/PaperPixelMovement.cpp" />
+        <option value="$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Private/PaperPixelCharacter.cpp" />
+        <option value="$PROJECT_DIR$/Plugins/PaperPixel/Source/PaperPixel/Public/PaperPixelCharacter.h" />
       </list>
     </option>
   </component>
@@ -108,7 +127,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.34243175" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C++" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -451,7 +470,10 @@
       <workItem from="1596173905924" duration="679000" />
       <workItem from="1596187998126" duration="17118000" />
       <workItem from="1596255279920" duration="10941000" />
-      <workItem from="1596276953159" duration="8446000" />
+      <workItem from="1596276953159" duration="9314000" />
+      <workItem from="1596337097778" duration="6478000" />
+      <workItem from="1596368120660" duration="1803000" />
+      <workItem from="1596451081850" duration="1785000" />
     </task>
     <task id="LOCAL-00001" summary="Add Jump Coyote&#10;Add Movement&#10;Update gitignore">
       <created>1596267760720</created>
@@ -460,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596267760720</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="set auto set jump velocity value when Begin Play">
+      <created>1596291761262</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596291761262</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,123 +512,129 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add Jump Coyote&#10;Add Movement&#10;Update gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Jump Coyote&#10;Add Movement&#10;Update gitignore" />
+    <MESSAGE value="set auto set jump velocity value when Begin Play" />
+    <option name="LAST_COMMIT_MESSAGE" value="set auto set jump velocity value when Begin Play" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="378" key="GridCell.Tab.0.bottom" timestamp="1596289779737">
+    <state width="1877" height="378" key="GridCell.Tab.0.bottom" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.0.bottom/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596902" />
-    <state width="1877" height="378" key="GridCell.Tab.0.bottom/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779737" />
+    <state width="1877" height="378" key="GridCell.Tab.0.bottom/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133752" />
-    <state width="1877" height="378" key="GridCell.Tab.0.center" timestamp="1596289779736">
+    <state width="1877" height="378" key="GridCell.Tab.0.center" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.0.center/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596902" />
-    <state width="1877" height="378" key="GridCell.Tab.0.center/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779736" />
+    <state width="1877" height="378" key="GridCell.Tab.0.center/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="285" key="GridCell.Tab.0.center/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133752" />
-    <state width="1877" height="378" key="GridCell.Tab.0.left" timestamp="1596289779736">
+    <state width="1877" height="378" key="GridCell.Tab.0.left" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.0.left/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596902" />
-    <state width="1877" height="378" key="GridCell.Tab.0.left/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779736" />
+    <state width="1877" height="378" key="GridCell.Tab.0.left/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="285" key="GridCell.Tab.0.left/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133751" />
-    <state width="1877" height="378" key="GridCell.Tab.0.right" timestamp="1596289779736">
+    <state width="1877" height="378" key="GridCell.Tab.0.right" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.0.right/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596902" />
-    <state width="1877" height="378" key="GridCell.Tab.0.right/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779736" />
+    <state width="1877" height="378" key="GridCell.Tab.0.right/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="285" key="GridCell.Tab.0.right/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133752" />
-    <state width="1877" height="378" key="GridCell.Tab.1.bottom" timestamp="1596289779737">
+    <state width="1877" height="378" key="GridCell.Tab.1.bottom" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.1.bottom/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596903" />
-    <state width="1877" height="378" key="GridCell.Tab.1.bottom/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779737" />
+    <state width="1877" height="378" key="GridCell.Tab.1.bottom/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="378" key="GridCell.Tab.1.bottom/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133745" />
-    <state width="1877" height="378" key="GridCell.Tab.1.center" timestamp="1596289779737">
+    <state width="1877" height="378" key="GridCell.Tab.1.center" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.1.center/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596903" />
-    <state width="1877" height="378" key="GridCell.Tab.1.center/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779737" />
+    <state width="1877" height="378" key="GridCell.Tab.1.center/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="378" key="GridCell.Tab.1.center/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133744" />
-    <state width="1877" height="378" key="GridCell.Tab.1.left" timestamp="1596289779737">
+    <state width="1877" height="378" key="GridCell.Tab.1.left" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.1.left/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596902" />
-    <state width="1877" height="378" key="GridCell.Tab.1.left/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779737" />
+    <state width="1877" height="378" key="GridCell.Tab.1.left/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="378" key="GridCell.Tab.1.left/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133744" />
-    <state width="1877" height="378" key="GridCell.Tab.1.right" timestamp="1596289779737">
+    <state width="1877" height="378" key="GridCell.Tab.1.right" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.1.right/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596903" />
-    <state width="1877" height="378" key="GridCell.Tab.1.right/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779737" />
+    <state width="1877" height="378" key="GridCell.Tab.1.right/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="378" key="GridCell.Tab.1.right/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133745" />
-    <state width="1877" height="378" key="GridCell.Tab.2.bottom" timestamp="1596289779738">
+    <state width="1877" height="378" key="GridCell.Tab.2.bottom" timestamp="1596451148186">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.2.bottom/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596903" />
-    <state width="1877" height="378" key="GridCell.Tab.2.bottom/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779738" />
+    <state width="1877" height="378" key="GridCell.Tab.2.bottom/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148186" />
     <state width="1877" height="378" key="GridCell.Tab.2.bottom/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133745" />
-    <state width="1877" height="378" key="GridCell.Tab.2.center" timestamp="1596289779737">
+    <state width="1877" height="378" key="GridCell.Tab.2.center" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.2.center/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596903" />
-    <state width="1877" height="378" key="GridCell.Tab.2.center/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779737" />
+    <state width="1877" height="378" key="GridCell.Tab.2.center/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="378" key="GridCell.Tab.2.center/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133745" />
-    <state width="1877" height="378" key="GridCell.Tab.2.left" timestamp="1596289779737">
+    <state width="1877" height="378" key="GridCell.Tab.2.left" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.2.left/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596903" />
-    <state width="1877" height="378" key="GridCell.Tab.2.left/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779737" />
+    <state width="1877" height="378" key="GridCell.Tab.2.left/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="378" key="GridCell.Tab.2.left/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133745" />
-    <state width="1877" height="378" key="GridCell.Tab.2.right" timestamp="1596289779737">
+    <state width="1877" height="378" key="GridCell.Tab.2.right" timestamp="1596451148185">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.2.right/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596903" />
-    <state width="1877" height="378" key="GridCell.Tab.2.right/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779737" />
+    <state width="1877" height="378" key="GridCell.Tab.2.right/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148185" />
     <state width="1877" height="378" key="GridCell.Tab.2.right/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133745" />
-    <state width="1877" height="378" key="GridCell.Tab.3.bottom" timestamp="1596289779738">
+    <state width="1877" height="378" key="GridCell.Tab.3.bottom" timestamp="1596451148186">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.3.bottom/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596904" />
-    <state width="1877" height="378" key="GridCell.Tab.3.bottom/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779738" />
+    <state width="1877" height="378" key="GridCell.Tab.3.bottom/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148186" />
     <state width="1877" height="378" key="GridCell.Tab.3.bottom/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133746" />
-    <state width="1877" height="378" key="GridCell.Tab.3.center" timestamp="1596289779738">
+    <state width="1877" height="378" key="GridCell.Tab.3.center" timestamp="1596451148186">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.3.center/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596904" />
-    <state width="1877" height="378" key="GridCell.Tab.3.center/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779738" />
+    <state width="1877" height="378" key="GridCell.Tab.3.center/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148186" />
     <state width="1877" height="378" key="GridCell.Tab.3.center/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133746" />
-    <state width="1877" height="378" key="GridCell.Tab.3.left" timestamp="1596289779738">
+    <state width="1877" height="378" key="GridCell.Tab.3.left" timestamp="1596451148186">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.3.left/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596903" />
-    <state width="1877" height="378" key="GridCell.Tab.3.left/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779738" />
+    <state width="1877" height="378" key="GridCell.Tab.3.left/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148186" />
     <state width="1877" height="378" key="GridCell.Tab.3.left/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133746" />
-    <state width="1877" height="378" key="GridCell.Tab.3.right" timestamp="1596289779738">
+    <state width="1877" height="378" key="GridCell.Tab.3.right" timestamp="1596451148186">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state width="1611" height="522" key="GridCell.Tab.3.right/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596207596904" />
-    <state width="1877" height="378" key="GridCell.Tab.3.right/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289779738" />
+    <state width="1877" height="378" key="GridCell.Tab.3.right/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596451148186" />
     <state width="1877" height="378" key="GridCell.Tab.3.right/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596268133746" />
     <state x="127" y="420" key="RiderGenerateDialog" timestamp="1596118177344">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="127" y="420" key="RiderGenerateDialog/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596118177344" />
-    <state x="781" y="350" key="SettingsEditor" timestamp="1596118306461">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="1215" y="1701" key="SettingsEditor" timestamp="1596340274282">
+      <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state x="781" y="350" key="SettingsEditor/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596118306461" />
+    <state x="1215" y="1701" key="SettingsEditor/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596340274282" />
+    <state x="1181" y="1698" key="Vcs.Push.Dialog.v2" timestamp="1596291768097">
+      <screen x="629" y="1440" width="1920" height="1050" />
+    </state>
+    <state x="1181" y="1698" key="Vcs.Push.Dialog.v2/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596291768097" />
     <state x="1331" y="1688" width="672" height="505" key="run.anything.popup" timestamp="1596267801812">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state x="936" y="333" width="672" height="677" key="run.anything.popup/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596189858283" />
     <state x="1331" y="1688" width="672" height="505" key="run.anything.popup/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596267801812" />
-    <state x="1336" y="1676" width="672" height="505" key="search.everywhere.popup" timestamp="1596289989100">
+    <state x="1336" y="1676" width="672" height="505" key="search.everywhere.popup" timestamp="1596378087920">
       <screen x="629" y="1440" width="1920" height="1050" />
     </state>
     <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410/2560.540.1600.870@0.0.2560.1410" timestamp="1596206142758" />
-    <state x="1336" y="1676" width="672" height="505" key="search.everywhere.popup/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596289989100" />
+    <state x="1336" y="1676" width="672" height="505" key="search.everywhere.popup/0.0.2560.1410/629.1440.1920.1050/2560.540.1600.870@629.1440.1920.1050" timestamp="1596378087920" />
     <state x="1336" y="1676" width="672" height="505" key="search.everywhere.popup/629.1440.1920.1050/2560.540.1600.870/0.0.2560.1410@629.1440.1920.1050" timestamp="1596260657183" />
   </component>
 </project>

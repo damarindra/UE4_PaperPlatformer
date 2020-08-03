@@ -47,6 +47,27 @@
             </e>
           </e>
         </e>
+        <e p="PaperPixel" t="Include">
+          <e p="PaperPixel.uplugin" t="Include" />
+          <e p="Resources" t="Include">
+            <e p="Icon128.png" t="Include" />
+          </e>
+          <e p="Source" t="Include">
+            <e p="PaperPixel" t="Include">
+              <e p="PaperPixel.Build.cs" t="Include" />
+              <e p="Private" t="Include">
+                <e p="PaperPixel.cpp" t="Include" />
+                <e p="PaperPixelCharacter.cpp" t="Include" />
+                <e p="PaperPixelMovement.cpp" t="Include" />
+              </e>
+              <e p="Public" t="Include">
+                <e p="PaperPixel.h" t="Include" />
+                <e p="PaperPixelCharacter.h" t="Include" />
+                <e p="PaperPixelMovement.h" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
       </e>
       <e p="Source" t="Include">
         <e p="Platformer2D" t="Include">
